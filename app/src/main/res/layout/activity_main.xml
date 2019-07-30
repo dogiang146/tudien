@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="言葉" />
+
+        <ImageButton
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/deletesearch"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="検索" />
+
+        <ImageButton
+            android:id="@+id/btSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/search"
+            android:text="検索" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvWord"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:padding="10dp"></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ProgressBar
+            android:id="@+id/proBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/volume"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edFrom"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/edTo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btChose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="Chose" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

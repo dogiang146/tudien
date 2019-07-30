@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_multichoice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMultichoice"
+    android:background="@drawable/anhnen2"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:text="いいものを選んでください"
+        android:textColor="#fa0000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="269dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/txtResult"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-104dp"
+        android:layout_marginTop="144dp"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="114dp"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/buttonNext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="76dp"
+        android:text="点: 0"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:text="Next" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="327dp"
+        android:layout_height="192dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+
+        <RadioButton
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imgBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtText"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/volume"
+        android:background="@null"
+        />
+
+
+</RelativeLayout>

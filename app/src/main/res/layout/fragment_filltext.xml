@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_filltext"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentFilltext"
+    android:background="@drawable/anhnen1">
+
+
+    <TextView
+        android:textColor="#fa0000"
+        android:id="@+id/textView"
+        android:layout_width="316dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="正しい答えを入力してください"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="320dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:hint="言葉"
+        android:textColor="#fa0000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:textColor="#fa0000"
+        android:id="@+id/edMean"
+        android:layout_width="300dp"
+        android:layout_height="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:ems="10"
+        android:hint="意味"
+        android:inputType="textPersonName"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edMean"
+        android:layout_alignTop="@+id/buttonEnd"
+        android:text="Prev" />
+
+    <Button
+        android:id="@+id/buttonEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonNext"
+        android:layout_centerHorizontal="true"
+        android:text="Finish" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:text="Next" />
+
+    <ImageButton
+        android:id="@+id/imgChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtText"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginBottom="-192dp"
+        android:src="@drawable/update"
+        android:background="@null"/>
+
+</RelativeLayout>
